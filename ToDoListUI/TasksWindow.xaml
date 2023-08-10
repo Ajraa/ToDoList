@@ -1,0 +1,16 @@
+﻿<Window x:Class="ToDoListUI.TasksWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoListUI"
+        mc:Ignorable="d"
+        Title="TasksWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="userLabel" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="38" Width="147" Content="pavel" FontSize="20"/>
+        <Button x:Name="logoutButton" Content="Logout" HorizontalAlignment="Left" Margin="703,14,0,0" VerticalAlignment="Top" FontSize="20" Height="34" Width="87" Click="logoutButton_Click"/>
+        <ListView x:Name="taskListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,48,10,0" SelectionChanged="taskListBox_SelectionChanged" FontSize="16"/>
+        <Button x:Name="newTaskButton" Content="New Task" HorizontalAlignment="Left" Margin="541,14,0,0" VerticalAlignment="Top" Height="34" Width="101" FontSize="20" Click="newTaskButton_Click"/>
+
+    </Grid>
+</Window>
